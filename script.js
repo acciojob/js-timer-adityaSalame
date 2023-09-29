@@ -9,7 +9,7 @@ let countdown=setInterval(function(){
   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	document.getElementById("timers").innerHtml="05/01/2024, ";//+hours+":"+minutes+":"+seconds
+	document.getElementById("timer").innerHtml="05/01/2024, ";//+hours+":"+minutes+":"+seconds
 	 if (distance < 0) {
     clearInterval(countdown);
    // document.getElementById("demo").innerHTML = "EXPIRED";
